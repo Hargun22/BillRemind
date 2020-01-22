@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B1F0C5F2385BCC1009E8893 /* BillViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B1F0C5E2385BCC1009E8893 /* BillViewController.storyboard */; };
+		1B1F0C632385BD6C009E8893 /* BillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B1F0C622385BD6C009E8893 /* BillViewController.swift */; };
+		1B4DEE04236E8EB9003A83F0 /* BillModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DEE03236E8EB9003A83F0 /* BillModel.swift */; };
+		1B4DEE06236E8ED0003A83F0 /* BillFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DEE05236E8ED0003A83F0 /* BillFunctions.swift */; };
+		1B4DEE08236F34CA003A83F0 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4DEE07236F34CA003A83F0 /* Data.swift */; };
 		1B56840B236B2EC90057BD31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B56840A236B2EC90057BD31 /* AppDelegate.swift */; };
 		1B56840D236B2EC90057BD31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B56840C236B2EC90057BD31 /* ViewController.swift */; };
-		1B568410236B2EC90057BD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B56840E236B2EC90057BD31 /* Main.storyboard */; };
 		1B568412236B2ECA0057BD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B568411236B2ECA0057BD31 /* Assets.xcassets */; };
-		1B568415236B2ECA0057BD31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B568413236B2ECA0057BD31 /* LaunchScreen.storyboard */; };
 		1B568420236B2ECB0057BD31 /* BillSaverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B56841F236B2ECB0057BD31 /* BillSaverTests.swift */; };
 		1B56842B236B2ECB0057BD31 /* BillSaverUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B56842A236B2ECB0057BD31 /* BillSaverUITests.swift */; };
+		1B568438236B2F640057BD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B56840E236B2EC90057BD31 /* Main.storyboard */; };
+		1B80F8CD23BD363A00FEE88B /* Bills.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B80F8CB23BD363A00FEE88B /* Bills.xcdatamodeld */; };
+		1B80F8D023BD368500FEE88B /* Bill+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B80F8CE23BD368500FEE88B /* Bill+CoreDataClass.swift */; };
+		1B80F8D123BD368500FEE88B /* Bill+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B80F8CF23BD368500FEE88B /* Bill+CoreDataProperties.swift */; };
+		1BB66FDC23A999A80083DF6B /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB66FDB23A999A80083DF6B /* AddBillViewController.swift */; };
+		1BE6D98723AECA3E000B85F9 /* PersistanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE6D98623AECA3E000B85F9 /* PersistanceService.swift */; };
+		1BFE6C0F23D41D9C00C5BB3E /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1BFE6C0E23D41D9C00C5BB3E /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,12 +44,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1B568407236B2EC90057BD31 /* BillSaver.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillSaver.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B1F0C5E2385BCC1009E8893 /* BillViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = BillViewController.storyboard; path = ../../../BillViewController.storyboard; sourceTree = "<group>"; };
+		1B1F0C622385BD6C009E8893 /* BillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillViewController.swift; sourceTree = "<group>"; };
+		1B322FB223D7CCE80078A904 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1B4DEE03236E8EB9003A83F0 /* BillModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillModel.swift; sourceTree = "<group>"; };
+		1B4DEE05236E8ED0003A83F0 /* BillFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillFunctions.swift; sourceTree = "<group>"; };
+		1B4DEE07236F34CA003A83F0 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		1B568407236B2EC90057BD31 /* BillRemind.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BillRemind.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B56840A236B2EC90057BD31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B56840C236B2EC90057BD31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1B56840F236B2EC90057BD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B568411236B2ECA0057BD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1B568414236B2ECA0057BD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B568416236B2ECA0057BD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B56841B236B2ECB0057BD31 /* BillSaverTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSaverTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B56841F236B2ECB0057BD31 /* BillSaverTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSaverTests.swift; sourceTree = "<group>"; };
@@ -47,6 +62,12 @@
 		1B568426236B2ECB0057BD31 /* BillSaverUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BillSaverUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B56842A236B2ECB0057BD31 /* BillSaverUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSaverUITests.swift; sourceTree = "<group>"; };
 		1B56842C236B2ECB0057BD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B80F8CC23BD363A00FEE88B /* Bills.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bills.xcdatamodel; sourceTree = "<group>"; };
+		1B80F8CE23BD368500FEE88B /* Bill+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bill+CoreDataClass.swift"; path = "BillSaver/Bill+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1B80F8CF23BD368500FEE88B /* Bill+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Bill+CoreDataProperties.swift"; path = "BillSaver/Bill+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1BB66FDB23A999A80083DF6B /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
+		1BE6D98623AECA3E000B85F9 /* PersistanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistanceService.swift; sourceTree = "<group>"; };
+		1BFE6C0E23D41D9C00C5BB3E /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,20 +95,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1B1F0C582385BC0A009E8893 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1B4DEE03236E8EB9003A83F0 /* BillModel.swift */,
+				1B4DEE07236F34CA003A83F0 /* Data.swift */,
+				1B4DEE05236E8ED0003A83F0 /* BillFunctions.swift */,
+				1BE6D98623AECA3E000B85F9 /* PersistanceService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1B1F0C5A2385BC32009E8893 /* BillViews */ = {
+			isa = PBXGroup;
+			children = (
+				1B1F0C5E2385BCC1009E8893 /* BillViewController.storyboard */,
+				1B1F0C622385BD6C009E8893 /* BillViewController.swift */,
+				1BB66FDB23A999A80083DF6B /* AddBillViewController.swift */,
+			);
+			path = BillViews;
+			sourceTree = "<group>";
+		};
+		1B1F0C5B2385BC77009E8893 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1B56840E236B2EC90057BD31 /* Main.storyboard */,
+				1B1F0C5A2385BC32009E8893 /* BillViews */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1B322FB123D7CCE80078A904 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B322FB223D7CCE80078A904 /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1B5683FE236B2EC80057BD31 = {
 			isa = PBXGroup;
 			children = (
+				1B80F8CE23BD368500FEE88B /* Bill+CoreDataClass.swift */,
+				1B80F8CF23BD368500FEE88B /* Bill+CoreDataProperties.swift */,
 				1B568409236B2EC90057BD31 /* BillSaver */,
 				1B56841E236B2ECB0057BD31 /* BillSaverTests */,
 				1B568429236B2ECB0057BD31 /* BillSaverUITests */,
 				1B568408236B2EC90057BD31 /* Products */,
+				1B322FB123D7CCE80078A904 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		1B568408236B2EC90057BD31 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1B568407236B2EC90057BD31 /* BillSaver.app */,
+				1B568407236B2EC90057BD31 /* BillRemind.app */,
 				1B56841B236B2ECB0057BD31 /* BillSaverTests.xctest */,
 				1B568426236B2ECB0057BD31 /* BillSaverUITests.xctest */,
 			);
@@ -97,12 +159,14 @@
 		1B568409236B2EC90057BD31 /* BillSaver */ = {
 			isa = PBXGroup;
 			children = (
+				1B1F0C5B2385BC77009E8893 /* Views */,
+				1B1F0C582385BC0A009E8893 /* Model */,
 				1B56840A236B2EC90057BD31 /* AppDelegate.swift */,
 				1B56840C236B2EC90057BD31 /* ViewController.swift */,
-				1B56840E236B2EC90057BD31 /* Main.storyboard */,
 				1B568411236B2ECA0057BD31 /* Assets.xcassets */,
-				1B568413236B2ECA0057BD31 /* LaunchScreen.storyboard */,
+				1BFE6C0E23D41D9C00C5BB3E /* Launch Screen.storyboard */,
 				1B568416236B2ECA0057BD31 /* Info.plist */,
+				1B80F8CB23BD363A00FEE88B /* Bills.xcdatamodeld */,
 			);
 			path = BillSaver;
 			sourceTree = "<group>";
@@ -142,7 +206,7 @@
 			);
 			name = BillSaver;
 			productName = BillSaver;
-			productReference = 1B568407236B2EC90057BD31 /* BillSaver.app */;
+			productReference = 1B568407236B2EC90057BD31 /* BillRemind.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1B56841A236B2ECB0057BD31 /* BillSaverTests */ = {
@@ -188,11 +252,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1120;
 				ORGANIZATIONNAME = "Hargun Bedi";
 				TargetAttributes = {
 					1B568406236B2EC90057BD31 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1120;
 					};
 					1B56841A236B2ECB0057BD31 = {
 						CreatedOnToolsVersion = 10.2;
@@ -229,9 +294,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1B568415236B2ECA0057BD31 /* LaunchScreen.storyboard in Resources */,
+				1B568438236B2F640057BD31 /* Main.storyboard in Resources */,
+				1B1F0C5F2385BCC1009E8893 /* BillViewController.storyboard in Resources */,
+				1BFE6C0F23D41D9C00C5BB3E /* Launch Screen.storyboard in Resources */,
 				1B568412236B2ECA0057BD31 /* Assets.xcassets in Resources */,
-				1B568410236B2EC90057BD31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +322,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B80F8D023BD368500FEE88B /* Bill+CoreDataClass.swift in Sources */,
+				1BB66FDC23A999A80083DF6B /* AddBillViewController.swift in Sources */,
 				1B56840D236B2EC90057BD31 /* ViewController.swift in Sources */,
+				1B4DEE08236F34CA003A83F0 /* Data.swift in Sources */,
+				1B4DEE04236E8EB9003A83F0 /* BillModel.swift in Sources */,
+				1B80F8D123BD368500FEE88B /* Bill+CoreDataProperties.swift in Sources */,
+				1B80F8CD23BD363A00FEE88B /* Bills.xcdatamodeld in Sources */,
+				1BE6D98723AECA3E000B85F9 /* PersistanceService.swift in Sources */,
+				1B4DEE06236E8ED0003A83F0 /* BillFunctions.swift in Sources */,
 				1B56840B236B2EC90057BD31 /* AppDelegate.swift in Sources */,
+				1B1F0C632385BD6C009E8893 /* BillViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +374,6 @@
 				1B56840F236B2EC90057BD31 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1B568413236B2ECA0057BD31 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1B568414236B2ECA0057BD31 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -432,16 +499,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 625L63KTLK;
 				INFOPLIST_FILE = BillSaver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hargun.BillSaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BillRemind;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -449,16 +520,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 625L63KTLK;
 				INFOPLIST_FILE = BillSaver/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Hargun.BillSaver;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = BillRemind;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -580,6 +655,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		1B80F8CB23BD363A00FEE88B /* Bills.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				1B80F8CC23BD363A00FEE88B /* Bills.xcdatamodel */,
+			);
+			currentVersion = 1B80F8CC23BD363A00FEE88B /* Bills.xcdatamodel */;
+			path = Bills.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1B5683FF236B2EC90057BD31 /* Project object */;
 }

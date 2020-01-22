@@ -1,75 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eYg-8E-upB">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1uq-ms-Zxn">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Bill View Controller-->
-        <scene sceneID="ryC-RW-vhe">
-            <objects>
-                <viewController id="eYg-8E-upB" customClass="BillViewController" customModule="BillSaver" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="oey-Fb-47m">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <navigationBar opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qra-Ci-iKG">
-                                <rect key="frame" x="0.0" y="34" width="414" height="44"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <items>
-                                    <navigationItem title="Your Bills" id="nnK-K1-Pta">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="add" id="V28-u7-Ate">
-                                            <connections>
-                                                <segue destination="1uq-ms-Zxn" kind="presentation" id="cJW-Gb-SAG"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uiu-kZ-hVG">
-                                <rect key="frame" x="0.0" y="78" width="414" height="818"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="XWn-6V-9Em">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="100"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XWn-6V-9Em" id="uGg-Pa-VJV">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstItem="Qra-Ci-iKG" firstAttribute="top" secondItem="oey-Fb-47m" secondAttribute="topMargin" constant="-10" id="6jf-iB-ih1"/>
-                            <constraint firstItem="Qra-Ci-iKG" firstAttribute="leading" secondItem="uiu-kZ-hVG" secondAttribute="leading" id="86m-Ch-W7i"/>
-                            <constraint firstItem="uiu-kZ-hVG" firstAttribute="top" secondItem="Qra-Ci-iKG" secondAttribute="bottom" id="CFb-el-Hx8"/>
-                            <constraint firstItem="Qra-Ci-iKG" firstAttribute="trailing" secondItem="uiu-kZ-hVG" secondAttribute="trailing" id="FEJ-jW-wmk"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="uiu-kZ-hVG" secondAttribute="bottom" constant="-34" id="G6D-dA-Lul"/>
-                            <constraint firstItem="Qra-Ci-iKG" firstAttribute="leading" secondItem="GOP-2M-mJZ" secondAttribute="leading" id="hRW-jL-qgJ"/>
-                            <constraint firstItem="Qra-Ci-iKG" firstAttribute="centerX" secondItem="oey-Fb-47m" secondAttribute="centerX" id="xLD-Er-6hS"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="GOP-2M-mJZ"/>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="uiu-kZ-hVG" id="vDi-pE-yEu"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lqF-FU-XnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="21.739130434782609" y="103.79464285714285"/>
-        </scene>
         <!--View Controller-->
         <scene sceneID="2l0-vE-Vyq">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="1uq-ms-Zxn" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7kI-UY-6V0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.40405607876712329" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="9LZ-AC-MmI"/>
