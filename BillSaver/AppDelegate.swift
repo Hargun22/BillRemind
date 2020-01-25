@@ -38,25 +38,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let fetchRequest: NSFetchRequest<Bill> = Bill.fetchRequest()
                       do {
                           let bills = try PersistanceService.context.fetch(fetchRequest)
-                        var dateComponents = DateComponents()
-                        dateComponents.hour = 7
-                        dateComponents.minute = 30
-                       
                           for reminders in bills {
                               let currentDate = Date()
                                 let calendar = Calendar.current
                             
-                            let currentHourMinute = calendar.dateComponents([.hour, .minute], from: currentDate)
-                            let currentTime = calendar.date(from: currentHourMinute)
-                            let remindTime = calendar.date(from: dateComponents)
                             if (reminders.reminderFrequency != "None") {
-                                if ((currentDate == reminders.date! && currentTime! > remindTime! ) || currentDate > reminders.date! ) {
+                                if (currentDate > reminders.date! && calendar.isDateInToday(reminders.date!) == false) {
                                 if (reminders.reminderFrequency == "Weekly"){
                                   let newDate = Calendar.current.date(byAdding: .weekOfYear, value: 1, to: reminders.date!)
                                   reminders.date = newDate
                                 }
                                 if (reminders.reminderFrequency == "Monthly"){
                                     let newDate = Calendar.current.date(byAdding: .month, value: 1, to: reminders.date!)
+                                  reminders.date = newDate
+                                }
+                                if (reminders.reminderFrequency == "Quarterly"){
+                                    let newDate = Calendar.current.date(byAdding: .quarter, value: 1, to: reminders.date!)
                                   reminders.date = newDate
                                 }
                                 if (reminders.reminderFrequency == "Yearly"){

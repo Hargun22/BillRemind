@@ -76,14 +76,25 @@ class BillViewController: UIViewController, UITableViewDataSource, UITableViewDe
             cell!.detailTextLabel?.textColor = UIColor.red
             cell?.detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 15)
         }
+        let date = Date()
+        let newDate = Calendar.current.date(byAdding: .day, value: 1, to: date)
+        let currentday = Calendar.current.date(byAdding: .day, value: 0, to: date)
+        let checkDatecomp = Calendar.current.dateComponents([.year, .month, .day], from: Data.billModels[indexPath.row].date!)
+        let checkDate = Calendar.current.date(from: checkDatecomp)
         
-        if (Date() > Data.billModels[indexPath.row].date!) {
+        if(Data.billModels[indexPath.row].reminderFrequency == "None"){
+        if (Data.billModels[indexPath.row].date! > newDate!) {
             cell!.textLabel?.textColor = UIColor.red
             cell!.detailTextLabel?.textColor = UIColor.red
             cell?.detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 15)
             cell!.detailTextLabel?.text = "Expired on: \(formatter.string(from: Data.billModels[indexPath.row].date!))"
         }
-        
+        }
+        if(Calendar.current.isDateInToday(Data.billModels[indexPath.row].date!) == true) {
+                       cell!.detailTextLabel?.textColor = UIColor.red
+                       cell?.detailTextLabel?.font = UIFont.boldSystemFont(ofSize: 15)
+                       cell!.detailTextLabel?.text = "Due Today"
+                   }
         
         
         

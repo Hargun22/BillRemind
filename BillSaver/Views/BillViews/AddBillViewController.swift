@@ -13,7 +13,7 @@ import UserNotifications
 class AddBillViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource,  UITextFieldDelegate {
 
     private let dataSource = ["None", "Weekly", "Monthly", "Quarterly", "Yearly"]
-    private var rowSelect = "Weekly"
+    private var rowSelect = "None"
     
     @IBOutlet weak var billTextField: UITextField!
     
